@@ -52,20 +52,20 @@ body * {
 
 #backend-gif {
   max-width: 100%;
-  width: 100px !important;
+  width: 78px !important;
   height: auto;
   position: absolute;
-  top: 101%;
-  left: 92%;
+  top: 105%;
+  left: 93%;
   transform: translate(-50%, -50%);
 }
 #backend-gif-light {
   max-width: 100%;
-  width: 130px !important;
+  width: 97px !important;
   height: auto;
   position: absolute;
-  top: 101%;
-  left: 36px;
+  top: 106%;
+  left: 23px;
   transform: translate(-50%, -50%);
 }
 
