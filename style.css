@@ -51,6 +51,7 @@ body * {
 }
 
 #backend-gif {
+  border: 1px solid red;
   max-width: 100%;
   width: 200px !important;
   height: auto;
@@ -60,6 +61,7 @@ body * {
   transform: translateY(-50%);
 }
 #backend-gif-light {
+  border: 1px solid red;
   max-width: 100%;
   width: 130px !important;
   height: auto;
