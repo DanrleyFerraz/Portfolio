@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <script>
+    // Função para verificar se o dispositivo é um dispositivo móvel
+    function isMobileDevice() {
+      return window.innerWidth <= 768 // Você pode ajustar esse valor conforme necessário
+    }
+
+    // Função para redirecionar para um site diferente se for um dispositivo móvel
+    function checkAndRedirect() {
+      if (isMobileDevice()) {
+        window.location.href = "google.com" // Substitua pelo URL do seu outro site
+      }
+    }
+
+    // Chama a função ao carregar a página
+    window.onload = checkAndRedirect
+  </script>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Danrley Ferraz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar.png"
+          alt="Foto de Danrley Ferraz sorrindo, usando um casaco preto, barba e fundo escuro"
+        />
+        <p>Danrley Ferraz</p>
+        <img src="./assets/umbreon.gif" alt="Umbreon" id="backend-gif" />
+        <img
+          src="./assets/espeon.gif"
+          alt="Espeon"
+          id="backend-gif-light"
+          style="display: none"
+        />
+        <a>Backend Developer </a>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vRXjninYPpfPAnWM1O7IoY280wHTvNYD7fgGcg4xL5znPA3c4XY8RJ0zZEc7_N04tqLjaBpDfdkC0NU/pub"
+            target="_blank"
+            >Projeto 1: My Friends World</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vRnH2ITt9eCiIGBJsDuAPffdkUkSZhZViiVrphEKkqEr56n0vatFhquO_T_ZHiGFD5jlfGsQ-1x3yN2/pub"
+            target="_blank"
+            >Projeto 2: Spider-Man Miles: Velocity Vault</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vTakhf9w8WnGHXgnu3JeoiFkzq7kvNmzJuZNWgbrM7d7rGOft9SI3PfXesAnEdDt6-iOO6d6_lE53Q7/pub"
+            target="_blank"
+            >Certificados</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/DanrleyFerraz" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://www.linkedin.com/in/danrleyferraz/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+
+        <a href="mailto:danrley.codes@gmail.com" target="_blank">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
